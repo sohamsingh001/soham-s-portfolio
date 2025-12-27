@@ -72,6 +72,24 @@ export const PROJECTS: Project[] = [
     githubUrl: '#',
     imageUrl: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=600&h=400',
   }
+  ,
+  {
+  id: '5',
+  title: 'DevOps Deployment Project',
+  description: 'Fully automated CI/CD pipeline using GitHub Actions to deploy a web application on AWS EC2 with artifact-based deployment via Amazon S3, IAM-secured least-privilege access, and Nginx production configuration on Linux.',
+  techStack: [
+    'AWS EC2',
+    'Amazon S3',
+    'IAM',
+    'GitHub Actions',
+    'Linux',
+    'Nginx',
+    'CI/CD'
+  ],
+  githubUrl: 'https://sohamsingh001.github.io/soham-s-portfolio/',
+  imageUrl: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=600&h=400',
+}
+
 ];
 
 export const EXPERIENCE: ExperienceItem[] = [
