@@ -2,34 +2,41 @@ name: Deploy React App to EC2 via S3
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout source code
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2️⃣ Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # 4️⃣ Build React (Vite) project
       - name: Build project
         run: npm run build
 
-      - - name: Upload build to S3
-run: aws s3 sync dist s3://soham-portfolio-builds --delete --region ap-south-1
+      # 5️⃣ Upload build files to S3 (FIXED REGION ISSUE)
+      - name: Upload build to S3
+        run: aws s3 sync dist s3://soham-portfolio-builds --delete --region ap-south-1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ap-south-1
 
+      # 6️⃣ Deploy from S3 to EC2 and restart Nginx
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1
         with:
@@ -38,5 +45,5 @@ run: aws s3 sync dist s3://soham-portfolio-builds --delete --region ap-south-1
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo rm -rf /usr/share/nginx/html/*
-            aws s3 sync s3://soham-portfolio-builds /usr/share/nginx/html
+            aws s3 sync s3://soham-portfolio-builds /usr/share/nginx/html --region ap-south-1
             sudo systemctl restart nginx
