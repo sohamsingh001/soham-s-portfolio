@@ -50,19 +50,19 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '2',
-    title: 'BuddyPDF - WordPress Plugin',
+    title: 'Resume Analyzer & Skill Gap Advisor',
     description: 'Custom WordPress plugin for BuddyBoss providing specialized theater mode with zoom and multi-PDF support in activity streams.',
-    techStack: ['PHP', 'WordPress', 'JScript', 'CSS'],
+    techStack: ['PYTHON', 'LLM', 'Cloud Computing', 'PostgresSQl'],
     githubUrl: '#',
     imageUrl: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&q=80&w=600&h=400',
   },
   {
     id: '3',
-    title: 'Stock Market Sentiment AI',
+    title: 'Stock Market Price Analysis[Machine Learning]',
     description: 'AI-powered system using LSTM and GRU models to forecast stock prices using OHLCV data and financial news sentiment analysis.',
     techStack: ['Python', 'Machine Learning', 'Streamlit', 'APIs'],
     githubUrl: '#',
-    imageUrl: 'https://images.unsplash.com/photo-1611974717482-48df9fd1d431?auto=format&fit=crop&q=80&w=600&h=400',
+    imageUrl: 'https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: '4',
@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
   ,
   {
   id: '5',
-  title: 'DevOps Deployment Project',
+  title: 'DevOps Deployment Project-Portfolio Site',
   description: 'Fully automated CI/CD pipeline using GitHub Actions to deploy a web application on AWS EC2 with artifact-based deployment via Amazon S3, IAM-secured least-privilege access, and Nginx production configuration on Linux.',
   techStack: [
     'AWS EC2',
@@ -112,7 +112,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     role: 'Master of Computer Applications (M.C.A)',
     company: 'Nirma University',
     period: '2024 - 2026',
-    description: 'Current CGPA: 7.33 / 10. Focused on advanced computer applications and software engineering.',
+    description: 'Current CGPA: 7.99 / 10. Focused on advanced computer applications and software engineering.',
   },
   {
     id: 'edu2',
