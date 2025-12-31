@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
   {
     id: '2',
     title: 'Resume Analyzer & Skill Gap Advisor',
-    description: 'Custom WordPress plugin for BuddyBoss providing specialized theater mode with zoom and multi-PDF support in activity streams.',
+    description: 'Developed  Resume analyzer where resume will analyize according to the jobs description  and advise the skills which are not fillfullied by the candiadtes and adivse the gaps which are needed to learn.',
     techStack: ['PYTHON', 'LLM', 'Cloud Computing', 'PostgresSQl'],
     githubUrl: '#',
     imageUrl: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&q=80&w=600&h=400',
@@ -103,7 +103,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     id: 'exp2',
     role: 'Freelance Web Developer',
-    company: 'BuddyLMS',
+    company: 'Freelance ',
     period: 'Jan 2025 - Apr 2025',
     description: 'Built a specialized theater mode with zoom and navigation for PDF handling in BuddyBoss community environments.',
   },
