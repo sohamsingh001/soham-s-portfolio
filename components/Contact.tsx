@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-slate-500 hover:text-green-600 transition-colors"
                 >
-                  +91 93277 58801
+                  +91 9327758801
                 </a>
               </div>
             </div>
