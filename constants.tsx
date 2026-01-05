@@ -105,7 +105,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     role: 'Freelance Web Developer',
     company: 'Freelance ',
     period: 'Jan 2025 - Apr 2025',
-    description: 'Built a specialized theater mode with zoom and navigation for PDF handling in BuddyBoss community environments.',
+    description: 'Built custom websites and web applications for clients using modern web technologies.',
   },
   {
     id: 'edu1',
